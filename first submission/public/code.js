@@ -48,7 +48,6 @@ function fetchData(){
 }
 
 function handleDataFromServer(data){
-    console.log('data received from server')
     console.log(data)
     recentPosts=data.posts
     updateRecentPosts()
@@ -66,7 +65,7 @@ function updateRecentPosts(){
 }
 //function to remove empty posts
 function removeEmptyElements(recentPosts) {
-    for (let i = 0; i < recentPosts.length; i++) {
+    for (let i = 0; i < recentPosts.lenght; i++) {
       if (recentPosts[i] === '' || recentPosts[i] === null || recentPosts[i] === undefined) {
         arr.splice(i, 1);
         i--;

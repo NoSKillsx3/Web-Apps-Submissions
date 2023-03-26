@@ -20,7 +20,6 @@ app.post('/newpost', (request, response)=>{
 
 app.get('/get-posts', (request, response)=>{
     const qtyPosts = request.query.qty;
-    console.log('send me '+qtyPosts+' posts please')
     response.json({
         posts:postList.slice(0,qtyPosts)
     })
