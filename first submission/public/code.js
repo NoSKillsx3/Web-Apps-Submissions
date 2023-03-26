@@ -11,6 +11,7 @@ let recentPostList=document.querySelector("#recent-posts")
 
 words.addEventListener('input',checkWords)
 
+
 function checkWords(event){
     currentWords=event.target.value
 }
