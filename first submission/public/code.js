@@ -66,7 +66,7 @@ function updateRecentPosts(){
 //function to remove empty posts
 function removeEmptyElements(recentPosts) {
     for (let i = 0; i < recentPosts.lenght; i++) {
-      if (recentPosts[i] === '' || recentPosts[i] === null || recentPosts[i] === undefined) {
+      if (recentPosts[i] === ""|| recentPosts[i] === null || recentPosts[i] === undefined) {
         arr.splice(i, 1);
         i--;
       }
